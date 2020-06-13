@@ -24,7 +24,7 @@ if torch.cuda.is_available():
     device = torch.device('cuda')
     cudnn.benchmark = True
 else:
-    device = torch.device('cpu'
+    device = torch.device('cpu')
 
 criterion = {
     'softmax': nn.CrossEntropyLoss().to(device),
